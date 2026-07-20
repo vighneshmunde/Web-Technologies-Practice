@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+<body>
+     <fieldset style="width: fit-content;">
+        <form id="signup">
+            <h1 style="text-align:center;">Sign Up</h1>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter Email" required>
+            <br><br>
+
+            <label for="new">Password:</label>
+            <input type="password" id="new" placeholder="Enter Password" required minlength="8" pattern=(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&]>
+            <br><br>
+
+            <label for="confirm">Confirm Password:</label>
+            <input type="password" id="confirm" placeholder="Confirm Password" required minlength="8" pattern=(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&]>
+            <br><br>
+
+            <button type="submit" style="text-align: center;">SIGN UP</button>
+            <br><br>
+
+            <label for="">Already have an account?</label>
+            <a href="./login.html">Log in</a>
+        </form>
+    </fieldset>
+</body>
+</html>

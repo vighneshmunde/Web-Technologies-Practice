@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgrey;
+        }
+
+        .signal{
+           background-color: black;
+           padding: 20px;
+           border-radius: 10px;
+        }
+
+        .light{
+            height: 80px;
+            width: 80px;
+            background-color: grey;
+            border: 1px solid;
+            border-radius: 100%;
+            margin: 15px 0;
+        }
+
+        .red{
+            animation: redLight 6s infinite;
+        }
+
+        .yellow{
+            animation: yellowLight 6s infinite;
+        }
+
+        .green{
+            animation: greenLight 6s infinite;
+        }
+
+        @keyframes redLight {
+            0%,33%{
+                background-color: red;
+                box-shadow: 1px 1px 1px red ;     
+            }
+
+            34%,100%{
+                background-color: grey;
+            }
+        }
+
+        @keyframes yellowLight {
+
+            0%,33%{
+                background-color: grey;     
+            }
+
+            34%,66%{
+                background-color: yellow;
+                box-shadow: 1px 1px 1px yellow ;
+            }
+
+             67%,100%{
+                background-color: grey;     
+            }
+        }
+
+
+         @keyframes greenLight {
+            0%,66%{
+                background-color:grey;     
+            }
+
+            67%,100%{
+                background-color: green;
+                box-shadow: 1px 1px 1px green ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="signal">
+        <div class=" light red"></div>
+        <div class=" light yellow"></div>
+        <div class=" light green"></div>
+    </div>
+</body>
+</html>

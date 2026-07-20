@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // ES6 Concepts
+
+        // //default Parameter
+
+        // function add( a = 3 , b = 8)
+        // {
+        //     return a + b
+        // }
+        // console.log(add())
+
+        // // Spread Operator with Object
+
+        // let student1 = {
+        //     name: "Aditya",
+        //     age: 20,
+        // }
+
+        // console.log(student1)
+
+        // let student2 = student1;
+        // console.log(student2)
+        // student2.name = "Surya"
+        // student2.city = "Vashi"
+        // console.log(student2)
+        // console.log(student1)
+
+        // let student3 = {...student1 , ...student2}
+        // console.log(student3)
+
+        // // spread operator with Array
+
+        // let number = [1,2,3,4,5]
+        // console.log(number)
+
+        // let num = [...number];
+        // console.log(num)
+        // num [0] = 20;
+        // console.log(num)
+
+        // console.log(number)
+
+        // // destructing
+
+        // let emp = {
+        //     ename : "Smith",
+        //     age : 20,
+        //     loc : {
+        //         city : "Vashi"
+        //     }
+        // }
+
+        // console.log(emp)
+        // // console.log(age)
+
+        // let {ename, age, loc} = emp
+
+        // console.log(age)
+        // console.log(loc.city)
+
+
+        // rest parameter
+
+        function number(...n){
+            return n
+        }
+        console.log(number(9,6,7,5,3,2))
+
+    </script>
+</body>
+</html>
+

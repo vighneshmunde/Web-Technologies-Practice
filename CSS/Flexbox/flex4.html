@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainBox{
+            height: 400px;
+            width: 400px;
+            /* border: 1px solid;  */
+            margin: 80px auto;
+        }
+
+        .box1, .box2{
+            height: 200px;
+            width: 100%;
+            /* border: 1px solid; */
+            display: flex;
+        }
+
+        .box{
+            height: 100%;
+            width: 50%;
+            border: 1px solid;
+        }
+
+        .child1{
+            background-image: linear-gradient(lightgreen,green);
+            border-top-right-radius: 150px;
+            border-bottom-left-radius: 150px;
+        }
+
+         .child2{
+            background-image: linear-gradient(lightgreen,green);
+            border-top-left-radius: 150px;
+            border-bottom-right-radius: 150px;
+        }
+
+         .child3{
+            background-image: linear-gradient(green,lightgreen);
+            border-top-left-radius: 150px;
+            border-bottom-right-radius: 150px;
+        }
+         .child4{
+            background-image: linear-gradient(green,lightgreen);
+            border-top-right-radius: 150px;
+            border-bottom-left-radius: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainBox">
+        <div class="box1">
+            <div class=" box child1"></div>
+            <div class="box child2"></div>
+        </div>
+        <div class="box2">
+            <div class=" box child3"></div>
+            <div class=" box child4"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 160px;
+            transition-property: transform;
+            transition-duration: 3s;
+            transition-delay: 1ms;
+        }
+
+        img:hover{
+            transform: translateX(900px);
+        }
+
+        #ease{
+            transition-timing-function: ease;
+        }
+        #linear{
+            transition-timing-function: linear;
+        }
+        #ease-in{
+            transition-timing-function: ease-in;
+        }
+
+        #ease-out{
+            transition-timing-function: ease-out;
+        }
+    </style>
+</head>
+<body>
+    <fieldset> 
+        <legend>ease</legend>
+        <img src="https://i.pinimg.com/originals/b8/29/9b/b8299bfa4a8092ab93c08a5db0359a23.gif" id="ease" alt=" gif not found">
+    </fieldset>
+    <fieldset> 
+        <legend>linear</legend>
+        <img src="https://i.pinimg.com/originals/b8/29/9b/b8299bfa4a8092ab93c08a5db0359a23.gif" id="linear" alt="gif not found">
+    </fieldset>
+    <fieldset> 
+        <legend>ease-in</legend>
+        <img src="https://i.pinimg.com/originals/b8/29/9b/b8299bfa4a8092ab93c08a5db0359a23.gif" id="ease-in" alt="gif not found">
+    </fieldset>
+    <fieldset> 
+        <legend>ease-out</legend>
+        <img src="https://i.pinimg.com/originals/b8/29/9b/b8299bfa4a8092ab93c08a5db0359a23.gif" id="ease-out" alt="gif not found">
+    </fieldset>
+</body>
+</html>
